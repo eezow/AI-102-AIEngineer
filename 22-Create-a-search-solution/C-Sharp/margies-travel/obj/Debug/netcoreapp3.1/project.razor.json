@@ -16,18 +16,18 @@
   "RootNamespace": "search_client",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Caleb\\Desktop\\Artificial intelligence\\AI-102-AIEngineer\\22-Create-a-search-solution\\C-Sharp\\margies-travel\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Caleb\\Desktop\\Artificial intelligence\\AI-102-AIEngineer\\22-Create-a-search-solution\\C-Sharp\\margies-travel\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Caleb\\Desktop\\Artificial intelligence\\AI-102-AIEngineer\\22-Create-a-search-solution\\C-Sharp\\margies-travel\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Caleb\\Desktop\\Artificial intelligence\\AI-102-AIEngineer\\22-Create-a-search-solution\\C-Sharp\\margies-travel\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\Caleb\\Desktop\\Artificial intelligence\\AI-102-AIEngineer\\22-Create-a-search-solution\\C-Sharp\\margies-travel\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -41,13 +41,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Caleb\\Desktop\\Artificial intelligence\\AI-102-AIEngineer\\22-Create-a-search-solution\\C-Sharp\\margies-travel\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\Caleb\\Desktop\\Artificial intelligence\\AI-102-AIEngineer\\22-Create-a-search-solution\\C-Sharp\\margies-travel\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Caleb\\Desktop\\Artificial intelligence\\AI-102-AIEngineer\\22-Create-a-search-solution\\C-Sharp\\margies-travel\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
+      "FilePath": "c:\\Users\\Caleb\\Desktop\\Artificial intelligence\\AI-102-AIEngineer\\22-Create-a-search-solution\\C-Sharp\\margies-travel\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     }
   ],

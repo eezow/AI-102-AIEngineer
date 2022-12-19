@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 
 # Import namespaces
-
+import azure.cognitiveservices.speech as speech_sdk
 
 def main():
     try:
@@ -15,8 +15,8 @@ def main():
         cog_region = os.getenv('COG_SERVICE_REGION')
 
         # Configure speech service
-        
-
+        speech_config = speech_sdk.SpeechConfig(cog_key, cog_region)
+        print('Ready to use speech service in:', speech_config.region)
         # Get spoken input
         command = TranscribeCommand()
         if command.lower() == 'what time is it?':
@@ -29,9 +29,23 @@ def TranscribeCommand():
     command = ''
 
     # Configure speech recognition
+    audio_config = speech_sdk.AudioConfig(use_default_microphone=True)
+    speech_recognizer = speech_sdk.SpeechRecognizer(speech_config , audio_config)
+    print('Khuluma manje..');
 
 
     # Process speech input
+    # Process speech input
+    speech = speech_recognizer.recognize_once_async().get()
+    if speech.reason == speech_sdk.ResultReason.RecognizedSpeech:
+        command = speech.text
+        print(command)
+    else:
+        print(speech.reason)
+        if speech.reason == speech_sdk.ResultReason.Canceled:
+            cancellation = speech.cancellation_details
+            print(cancellation.reason)
+            print(cancellation.error_details)
 
 
     # Return the command
@@ -44,9 +58,14 @@ def TellTime():
 
 
     # Configure speech synthesis
+    speech_config.Speech_synthesis_voice_name = "en-GB-RyanNeural"
+    speech_synthesizer = speech_sdk.SpeechSynthesizer(speech_config)
     
 
     # Synthesize spoken output
+    speak = speech_synthesizer.speak_text_async(response_text).get()
+    if speak.reason != speech_sdk.ResultReason.SynthesizingAudioCompleted:
+        print(speak.reason)
 
 
     # Print the response
